@@ -1,10 +1,11 @@
 from downloader.video import download_video
 from downloader.audio import download_audio
 
+print("=== YouTube Downloader ===")
 print("1. Download video")
 print("2. Download audio (mp3)")
 
-choice = input("Choice: ")
+choice = input("Alege opțiunea: ")
 url = input("YouTube URL: ")
 
 if choice == "1":
@@ -12,4 +13,4 @@ if choice == "1":
 elif choice == "2":
     download_audio(url)
 else:
-    print("Invalid choice")
+    print("Opțiune invalidă")
